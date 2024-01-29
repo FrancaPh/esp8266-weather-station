@@ -24,17 +24,17 @@ This Arduino sketch is designed for a weather station using an ESP8266 microcont
 
 The following libraries are used in this project. Make sure to install them in your Arduino IDE before uploading the sketch:
 
-- **ESP8266WiFi:** For ESP8266 WiFi connectivity.
-- **coredecls:** Required for settimeofday_cb() function.
-- **ESPHTTPClient:** Allows the ESP8266 to make HTTP requests.
-- **JsonListener:** A library for parsing JSON data.
-- **time:** Time library for managing time-related functions.
-- **sys/time:** Time library for struct timeval.
-- **SH1106Wire:** Library for controlling SH1106-based OLED displays.
-- **OLEDDisplayUi:** A library for creating user interfaces on OLED displays.
-- **Wire:** I2C communication library.
-- **OpenWeatherMapCurrent:** Library for interfacing with the OpenWeatherMap Current Weather API.
-- **OpenWeatherMapForecast:** Library for interfacing with the OpenWeatherMap Forecast API.
+- **[ESP8266WiFi](https://github.com/esp8266/Arduino):** For ESP8266 WiFi connectivity.
+- **[coredecls](https://github.com/esp8266/Arduino/blob/master/tools/sdk/include/coredecls.h):** Required for settimeofday_cb() function.
+- **[ESPHTTPClient](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient):** Allows the ESP8266 to make HTTP requests.
+- **[JsonListener](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266JSON):** A library for parsing JSON data.
+- **[time](https://github.com/PaulStoffregen/Time):** Time library for managing time-related functions.
+- **[sys/time](https://github.com/esp8266/Arduino/blob/master/tools/sdk/include/sys/time.h):** Time library for struct timeval.
+- **[SH1106Wire](https://github.com/ThingPulse/esp8266-oled-ssd1306):** Library for controlling SH1106-based OLED displays.
+- **[OLEDDisplayUi](https://github.com/ThingPulse/esp8266-oled-ssd1306):** A library for creating user interfaces on OLED displays.
+- **[Wire](https://www.arduino.cc/en/reference/wire):** I2C communication library.
+- **[OpenWeatherMapCurrent](https://github.com/squix78/esp8266-weather-station/blob/master/OpenWeatherMapCurrent.h):** Library for interfacing with the OpenWeatherMap Current Weather API.
+- **[OpenWeatherMapForecast](https://github.com/squix78/esp8266-weather-station/blob/master/OpenWeatherMapForecast.h):** Library for interfacing with the OpenWeatherMap Forecast API.
 
 ## Setup
 
