@@ -1,3 +1,7 @@
+![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)
+![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)
+![forthebadge](https://forthebadge.com/images/badges/uh-oh-404-no-pages-or-badges.svg)
+
 ![Star Badge](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 [![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/FrancaPh)
@@ -64,3 +68,7 @@ The following libraries are used in this project. Make sure to install them in y
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+
