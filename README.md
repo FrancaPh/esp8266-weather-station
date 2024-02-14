@@ -11,7 +11,7 @@
 
 ## Overview
 
-This Arduino sketch is designed for a weather station using an ESP8266 microcontroller, an OLED display (SH1106), and the OpenWeatherMap API to fetch weather data. The project aims to provide a compact and informative display of current weather conditions and forecasts.
+This Arduino sketch is designed for a weather station using an ESP8266 microcontroller, an OLED display (SH1106), and the OpenWeatherMap API to fetch weather data. The project aims to provide a compact and informative display of current weather conditions and forecasts, now also including local temperature and humidity measurements using a DHT11 sensor.
 
 ## Features
 
@@ -19,13 +19,13 @@ This Arduino sketch is designed for a weather station using an ESP8266 microcont
 - **Real-time Clock:** Utilizes the ESP8266's capabilities to maintain accurate time.
 - **OpenWeatherMap Integration:** Retrieves current weather information and forecasts from the OpenWeatherMap API.
 - **OLED Display:** Utilizes the SH1106 OLED display to present weather information in a clear and organized manner.
-- **User Interface:** Implements a basic user interface to display date, time, current weather, and forecast details.
+- **User Interface:** Implements a basic user interface to display date, time, current weather, forecasts, local temperature, and humidity.
 
 ## Hardware Requirements
 
 - ESP8266 microcontroller
 - SH1106 OLED display
-- (Add any additional hardware requirements)
+- DHT11 temperature and humidity sensor (new addition)
 
 ## Libraries
 
@@ -39,6 +39,8 @@ The following libraries are used in this project. Make sure to install them in y
 - **[Wire](https://www.arduino.cc/en/reference/wire):** I2C communication library.
 - **[OpenWeatherMapCurrent](https://github.com/ThingPulse/esp8266-weather-station/tree/master):** Library for interfacing with the OpenWeatherMap Current Weather API.
 - **[OpenWeatherMapForecast](https://github.com/ThingPulse/esp8266-weather-station/tree/master):** Library for interfacing with the OpenWeatherMap Forecast API.
+- **[DHT](https://github.com/adafruit/DHT-sensor-library):** Library for DHT11 sensor.
+- **[ThingspeakClient](https://github.com/mathworks/thingspeak-arduino):** Library for interfacing with ThingSpeak API.
 
 ## Setup
 
@@ -46,11 +48,11 @@ The following libraries are used in this project. Make sure to install them in y
 
 2. Open the Arduino IDE, install the necessary libraries mentioned in the code, and upload the sketch to your ESP8266 board.
 
-3. Connect the ESP8266 to the OLED display and ensure the proper wiring as specified in the code.
+3. Connect the ESP8266 to the OLED display and DHT11 sensor, ensuring the proper wiring as specified in the code.
 
 4. Power on the device and connect it to the specified WiFi network.
 
-5. The weather station will start displaying current weather information and forecasts.
+5. The weather station will start displaying current weather information, forecasts, local temperature, and humidity.
 
 ## Configuration
 
@@ -64,11 +66,11 @@ The following libraries are used in this project. Make sure to install them in y
 - **v1.1:** Structuring the time system.
 - **v1.2:** Connecting to the OpenWeatherMap API and decoding the JSON file.
 - **v1.3:** Configuring the OLED SH1106 display using the SH1106Wire library.
+- **v1.4:** Adding a DHT11 sensor for local temperature and humidity measurements.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
 
