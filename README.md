@@ -25,7 +25,7 @@ This Arduino sketch is designed for a weather station using an ESP8266 microcont
 
 - ESP8266 microcontroller
 - SH1106 OLED display
-- DHT11 temperature and humidity sensor (new addition)
+- DHT11 temperature and humidity sensor
 
 ## Libraries
 
