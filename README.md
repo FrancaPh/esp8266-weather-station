@@ -31,12 +31,8 @@ The weather station Arduino sketch is designed for an ESP8266 NodeMCU v3 microco
 - SH1106 OLED display
 - BME280 temperature, pressure, and humidity sensor
 
-#### Images
-
-1. Weather Station Setup:
-   ![Weather Station Setup](weather_station_setup_image_url)
-
-Replace `weather_station_setup_image_url` with the URL of the image depicting the setup of the weather station.
+#### Weather Station Setup:
+   ![Weather Station Setup](https://github.com/FrancaPh/esp8266-weather-station/blob/main/Schematics/WeatherStation.svg)
 
 ### Libraries
 
@@ -70,12 +66,8 @@ The weather logger Arduino sketch is designed for an ESP8266 ESP01 module and a 
 - ESP8266 ESP01 module
 - DHT11 temperature and humidity sensor
 
-#### Images
-
-2. Weather Logger Setup:
-   ![Weather Logger Setup](weather_logger_setup_image_url)
-
-Replace `weather_logger_setup_image_url` with the URL of the image depicting the setup of the weather logger.
+#### Weather Logger Setup:
+   ![Weather Logger Setup](https://github.com/FrancaPh/esp8266-weather-station/blob/main/Schematics/WeatherLogger.svg)
 
 ### Libraries
 
