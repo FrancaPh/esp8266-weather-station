@@ -5,13 +5,13 @@
 ![Star Badge](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 [![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/FrancaPh)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/FrancaPh/esp8266-weather-station/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 # ESP8266 Weather Station
 
 ## Overview
 
-This Arduino sketch is designed for a weather station using an ESP8266 microcontroller, an OLED display (SH1106), and the OpenWeatherMap API to fetch weather data. The project aims to provide a compact and informative display of current weather conditions and forecasts, now also including local temperature and humidity measurements using a DHT11 sensor.
+This Arduino sketch is designed for a weather station using an ESP8266 NodeMCU v3 microcontroller, an OLED display (SH1106), and the OpenWeatherMap API to fetch weather data. The project aims to provide a compact and informative display of current weather conditions and forecasts, now also including local temperature and humidity measurements using a BME280 sensor.
 
 ## Features
 
@@ -23,9 +23,9 @@ This Arduino sketch is designed for a weather station using an ESP8266 microcont
 
 ## Hardware Requirements
 
-- ESP8266 microcontroller
+- ESP8266 NodeMCU v3 microcontroller
 - SH1106 OLED display
-- DHT11 temperature and humidity sensor
+- BME280 temperature, pressure, and humidity sensor
 
 ## Libraries
 
@@ -39,16 +39,16 @@ The following libraries are used in this project. Make sure to install them in y
 - **[Wire](https://www.arduino.cc/en/reference/wire):** I2C communication library.
 - **[OpenWeatherMapCurrent](https://github.com/ThingPulse/esp8266-weather-station/tree/master):** Library for interfacing with the OpenWeatherMap Current Weather API.
 - **[OpenWeatherMapForecast](https://github.com/ThingPulse/esp8266-weather-station/tree/master):** Library for interfacing with the OpenWeatherMap Forecast API.
-- **[DHT](https://github.com/adafruit/DHT-sensor-library):** Library for DHT11 sensor.
+- **[Adafruit BME280](https://github.com/adafruit/Adafruit_BME280_Library):** Library for BME280 sensor.
 - **[ThingspeakClient](https://github.com/mathworks/thingspeak-arduino):** Library for interfacing with ThingSpeak API.
 
 ## Setup
 
 1. Clone or download the project from the [GitHub repository](https://github.com/FrancaPh/esp8266-weather-station).
 
-2. Open the Arduino IDE, install the necessary libraries mentioned in the code, and upload the sketch to your ESP8266 board.
+2. Open the Arduino IDE, install the necessary libraries mentioned in the code, and upload the sketch to your ESP8266 NodeMCU v3 board.
 
-3. Connect the ESP8266 to the OLED display and DHT11 sensor, ensuring the proper wiring as specified in the code.
+3. Connect the ESP8266 to the OLED display and BME280 sensor, ensuring the proper wiring as specified in the code.
 
 4. Power on the device and connect it to the specified WiFi network.
 
@@ -59,6 +59,7 @@ The following libraries are used in this project. Make sure to install them in y
 - Adjust WiFi credentials (`WIFI_SSID` and `WIFI_PWD`) to match your network.
 - Customize OpenWeatherMap API settings (`OPEN_WEATHER_MAP_APP_ID` and `OPEN_WEATHER_MAP_LOCATION_ID`).
 - Modify display settings, such as I2C address and pins, to match your hardware.
+- Configure Thingspeak settings (`THINGSPEAK_CHANNEL_ID` and `THINGSPEAK_API_READ_KEY`).
 
 ## Version History
 
@@ -66,11 +67,10 @@ The following libraries are used in this project. Make sure to install them in y
 - **v1.1:** Structuring the time system.
 - **v1.2:** Connecting to the OpenWeatherMap API and decoding the JSON file.
 - **v1.3:** Configuring the OLED SH1106 display using the SH1106Wire library.
-- **v1.4:** Adding a DHT11 sensor for local temperature and humidity measurements.
+- **v1.4:** Adding a BME280 sensor for local temperature, pressure, and humidity measurements.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
