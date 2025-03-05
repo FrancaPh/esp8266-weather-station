@@ -1,4 +1,4 @@
-![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)
+![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)
 ![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)
 ![forthebadge](https://forthebadge.com/images/badges/uh-oh-404-no-pages-or-badges.svg)
 
